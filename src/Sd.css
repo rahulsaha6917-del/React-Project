@@ -1,88 +1,111 @@
 /* Minimal, clean styles for the Task Manager */
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
+  padding: 7px;
+  background-color: burlywood;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e00a0a;
 }
 
 html, body {
-  margin: 30px;
-  padding: 30px;
-  font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  background: #f7f7f8;
-  color: #111111;
+  margin: 50px;
+  padding: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: pink;
+  text-align: center;
+  text-decoration-color: orange;
+  font-family:apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: white;
+
+  color:purple;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+
 }
 
 .App {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 24px;
+  max-width: 1000px;
+  margin: 1 auto;
+  padding: 50px;
+  transform: translate(20px, 10px);
+  a:hover {color: red; text-decoration: underline;}
 }
 
 header {
-  margin-bottom: 16px;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-size: larger;
+  text-transform: capitalize;
+  text-wrap-style: auto;
 }
 
 header h1 {
-  margin: 0 0 4px 0;
-  font-size: 28px;
+  margin: 1 1 4px 1;
+  font-size: 30px;
+  font-style: italic;
 }
 
 header p {
-  margin: 0;
-  color: #555;
+  margin: 6;
+  color: #e00a0a;
 }
 
 .task-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 16px 0;
+  flex-grow: inherit;
+  gap: 12px;
+  margin: 30px 10;
 }
 
 #inp {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 1;
-  padding: 8px 10px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background: #ffffff;
+  flex: 3;
+  padding: 12px 14px;
+  border: 3px solid #64b711;
+  border-radius: 6px;
+  background: greenyellow;
 }
 
 #inp input {
-  flex: 1;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  font-size: 14px;
+  flex: 4;
+  border: 5;
+  outline: 4;
+  background-color:yellow;
+  font-size: 30px;
 }
 
 #inp button {
-  border: 0;
-  background: #111111;
-  color: #ffffff;
-  padding: 8px 12px;
-  border-radius: 6px;
+  border: 10;
+  background: red;
+  color: blue;
+  padding: 8px 10px;
+  border-radius: 7px;
   cursor: pointer;
 }
 
 #btns {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 #btns select {
-  padding: 8px 10px;
-  border: 1px solid #e5e7eb;
+  padding: 12px 10px;
+  border: 1px solid #ae0f84;
   border-radius: 6px;
-  background: #ffffff;
+  background: red;
 }
 
 .task-list {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0;
+  list-style: initial;
+  padding: 3;
+  margin: 20px 2;
 }
 
 .task-list li {
@@ -90,48 +113,53 @@ header p {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  padding: 12px;
-  border: 1px solid #eeeeee;
-  border-radius: 8px;
-  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #5df118;
+  border-radius: 12px;
+  background: #dd0f9c;
 }
 
 .task-list li.completed {
-  text-decoration: line-through;
-  opacity: 0.7;
+  text-decoration: dotted;
+  text-transform: capitalize;
+  opacity: 1;
 }
 
 .task-list button {
-  background: none;
-  border: 0;
+  background-color: #5df118;
+  border: 2;
   color: #047857;
   cursor: pointer;
-  padding: 6px 8px;
-  border-radius: 6px;
+  padding: 12px 10px;
+  border-radius: 68px;
 }
 
 .progress-tracker {
-  margin-top: 16px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
 .progress-bar {
   height: 8px;
-  background: #eeeeee;
+  background: white;
   border-radius: 999px;
   overflow: hidden;
 }
 
 .progress {
   height: 100%;
-  background: #16a34a;
+  background: green;
+  animation-duration: 4ms;
 }
 
 .clear-btn {
-  margin-top: 16px;
-  background: #dc2626;
-  color: #ffffff;
-  border: 0;
-  padding: 10px 14px;
-  border-radius: 6px;
+  margin-top: 25px;
+  background: #6a08d9;
+  color: hsla(0, 7%, 14%, 0.895);
+  border: 1;
+  padding: 18px 16px;
+  border-radius: 8px;
   cursor: pointer;
 }
