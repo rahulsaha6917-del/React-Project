@@ -1,8 +1,8 @@
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Taskform from './Components/Taskform'
-import Tasklist from './Components/Tasklist'
+import Tasklist from './Components/Tasklist';
 import Progresstracker from './Components/Progresstracker'
-import './sd.css'
+import './Sd.css'
 
 
 export default function App() {
